@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #F29E94, #2373DF);
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.primary-card {
+    width: 420px;
+    height: 300px;
+    padding: 55px;
+    background-color: #334057;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 20;
+    text-align: center;
+
+}
+
+.title-text {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.primary-content {
+    border-top: 0.1px solid #ffffffa1;
+    padding-top: 20px;
+}
+
+.primary-pera {
+    color: #ffffffa1;
+    font-weight: 300;
+}
+
+.social-media-link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-media-link li {
+    list-style: none;
+}
+
+.social-media-link li a {
+    padding: 8px 12px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+
+}
+
+.social-media-link li a.f-link {
+    background-color: #6E92D5;
+}
+.social-media-link li a.p-link {
+    background-color: #83B893;
+}
+.social-media-link li a.m-link {
+    background-color: #C68EA9;
+}
+
+
+.blinking-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.blinking-card {
+    width: 15px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    animation: blink linear infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+}
+
+
+@media only screen and (max-width: 425px){
+	
+.primary-card {
+    max-width: 280px;
+    height: 300px;
+    padding:55px 20px;
+    
+}
+.social-media-link li a {
+    padding: 6px 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: white;
+
+}
+
+
+}
